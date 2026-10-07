@@ -153,7 +153,7 @@ sudo apt install php -y
 ### Install Python Dependencies
 
 ```bash
-pip install pandas numpy scikit-learn joblib
+python -m pip install -r requirements.txt
 ```
 
 ---
@@ -173,6 +173,19 @@ python3 code.py
 cd PHP
 php -S localhost:8000
 ```
+
+Train the model and run PHP with the same Python environment so the saved
+scikit-learn model matches the runtime:
+
+```bash
+cd ..
+python PYTHON/code.py
+cd PHP
+```
+
+On Windows, set `PYTHON_BIN` to that environment's Python executable before
+starting PHP if `python` on `PATH` points elsewhere. The app is an educational
+demonstration only and must not be used to diagnose or rule out cancer.
 
 ### Open Browser
 

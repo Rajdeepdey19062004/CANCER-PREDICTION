@@ -22,6 +22,10 @@
 
             <button type="submit">PREDICT</button>
         </form>
+        <p class="disclaimer">
+            Educational demonstration only; this tool cannot diagnose cancer.
+            Consult a qualified healthcare professional about medical concerns.
+        </p>
     </div>
 </body>
 </html>
